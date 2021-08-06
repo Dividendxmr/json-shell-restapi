@@ -1,2 +1,2 @@
 # json-shell-restapi
-Basically some shit that i got asked to do but really is aids sooooooooooooooooooooo
+Uh basically the title Json rest api that sends commands via SSH, nothing impressive, but its simple and fast.
