@@ -1,0 +1,12 @@
+{
+  "API": {
+    "AuthToken": "testkey-123",
+    "Port": ":8081"
+  },
+
+  "SSH": {
+    "IP": "127.0.0.1:22",
+    "User": "user",
+    "Password": "test"
+  }
+}
