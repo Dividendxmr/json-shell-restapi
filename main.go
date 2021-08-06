@@ -39,7 +39,7 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
 	case "GET":
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, "Armour API\n")
+		fmt.Fprintf(w, "API\n")
 	case "POST":
 		body, err := ioutil.ReadAll(r.Body)
 		if err != nil {
@@ -73,6 +73,6 @@ func main() {
         ParseJson("./config.json")
 	http.HandleFunc("/", indexPage)
 	http.HandleFunc("/api", apiHandler)
-        fmt.Println("Started the API - Coded by M0ba")
+        fmt.Println("Started the API")
         fmt.Println(http.ListenAndServe(C.API.Port, nil))
 }
