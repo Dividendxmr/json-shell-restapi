@@ -3,6 +3,7 @@ package main
 import (
   "net"
   "log"
+  "time"
 )
 
 func ConnectServer(method, IP string, port, time int) {
@@ -10,8 +11,11 @@ func ConnectServer(method, IP string, port, time int) {
   if err != nil {
     log.Fatal(err)
   }
-  defer c.Close()
 
+  _, err = c.Write([]byte("\n\n"))
+  if err != nil {
+    log.Fatal(err)
+  }
   _, err = c.Write([]byte(C.Server.Username))
   if err != nil {
     log.Fatal(err)
@@ -27,5 +31,8 @@ func ConnectServer(method, IP string, port, time int) {
   if err != nil {
     log.Fatal(err)
   }
+
+  time.Sleep(120 * time.Second)
+  c.Close()
 }
 
