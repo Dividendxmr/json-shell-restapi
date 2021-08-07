@@ -1,0 +1,7 @@
+{
+  "API": {
+    "AuthToken": "test",
+    "Port": ":8081"
+  }
+
+}
