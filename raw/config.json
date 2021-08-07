@@ -1,0 +1,11 @@
+{
+  "API": {
+    "AuthToken": "test",
+    "Port": ":8081"
+  },
+  "Server": {
+    "IP": "127.0.0.1:1337",
+    "Username": "test\n",
+    "Password": "test\n"
+  }
+}
