@@ -76,6 +76,6 @@ func main() {
         ParseJson("./config.json")
 	http.HandleFunc("/", indexPage)
 	http.HandleFunc("/api", apiHandler)
-        fmt.Println("Started the API - Coded by M0ba")
+        fmt.Println("Started the API - Coded by Zonehax")
         fmt.Println(http.ListenAndServe(C.API.Port, nil))
 }
